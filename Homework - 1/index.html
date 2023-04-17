@@ -9,7 +9,7 @@
 
   <body>
     <script>
-      // 1
+      1
       alert("Alex");
 
       // 3
@@ -19,7 +19,7 @@
       alert(b);
       alert((a = b));
 
-      // 4
+      // 4 Створіть об’єкт з 5-ма наступними властивостями: “String”, “Number”, “Boolean”, “Undefined”, “Null”. Значення кожної властивості повинно відповідати відповідному примітивному типу даних.
       let cat = {
         catName: "Barsik",
         age: 5,
@@ -39,13 +39,17 @@
 
       //8. Напишіть скріпт, який вираховує кількість секунд в годині, в добі, в місяці, записує результати в відповідні змінні, і виводить їх значення на екран
 
-      let hour = 60 * 60;
-      let day = 60 * 60 * 24;
-      let month = 60 * 60 * 24 * 30;
+      const secInMinute = minutesInHour = 60;
+      const hoursInDay = 24; 
+      let daysInMonth = 30
 
-      alert(hour);
-      alert(day);
-      alert(month);
+      const hour = secInMinute * minutesInHour;
+      const day = secInMinute * minutesInHour * hoursInDay;
+      let month = secInMinute * minutesInHour * hoursInDay * daysInMonth;
+
+      alert(`${hour} seconds in 1 hour`);
+      alert(`${day} seconds in 1 day`);
+      alert(`${month} seconds in 1 month`);
     </script>
     <script src="main.js"></script>
   </body>
