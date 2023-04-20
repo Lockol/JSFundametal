@@ -8,32 +8,35 @@
 </head>
 <body>
     <script>
-        // console.log(a<b<c);
+// // 1 - DONE
+
+        // console.log((a < b) && (b < c)); // Не впевнений, що саме це потрібно було зробити
 
 
 
-    // 2 
+// // 2 - DONE
     
-        let x = 1;
-        let y = 2;
+        // let x = 1;
+        // let y = 2;
+    
+       // let res1 = String(x) + y
+       // console.log(res1);
+      // console.log(typeof res1); 
 
-        // let res1 = String(x) + y
-        // console.log(res1);
-        // console.log(typeof res1); 
-
-         let res2 = (x < y) + String(y) //Допишіть код, необхідно використовувати змінні x і y
-        console.log(res2); // ""true2""
-        console.log(typeof res2); // ""string""
+    
+    //     let res2 = (x < y) + String(y) //Допишіть код, необхідно використовувати змінні x і y
+    //     console.log(res2); // ""true2""
+    //     console.log(typeof res2); // ""string""
 
         // let res3 = x < y;
         // console.log(res3); // true
         // console.log(typeof res3);
 
-        // let res4 = x / toString(y)
-        // console.log(res4); 
-        // console.log(typeof res4); 
+        // let res4 = x / typeof y;
+        // console.log(res4); // Nan
+        // console.log(typeof res4);  // number
 
-    // 3. 
+// // 3 - DONE
         // let isAdult = +prompt('Are you an Adult?')
 
         //     if (isAdult >= 18) {
@@ -42,27 +45,83 @@
         //         alert('You are not adult')
         //     }
 
+//4.Задано масив чисел, знайти число яке найбільш часто входить в масив, занести це число в новий масив і видалити всі входження цього числа із поточного масиву.
+
+        // let arr = [4, 5, 2, 1, 6, 5, 3, 5, 2, 5];
+        // let data = {};
+        // let quantityValue = 0;
+        // let mostUsValue = null;
+
+        // for (let num of arr) {
+        // data[num] = (data[num] || 0) + 1;
+        // if (data[num] > quantityValue) {
+        //     quantityValue = data[num];
+        //     mostUsValue = num;
+        //     }
+        // }
+
+        // let newArr = arr.filter(num => data[num] === quantityValue);
+        // arr = arr.filter(num => num !== mostUsValue);
+        // console.log(newArr); 
+        // console.log(arr); 
+        
+
+        
+// 5. - Done
+
+    // const a = parseFloat(prompt('Довжина сторони a:'));
+    // const b = parseFloat(prompt('Довжина сторони b:'));
+    // const c = parseFloat(prompt('Довжина сторони c:'));
+
+    // if (isNaN(a) || isNaN(b) || isNaN(c) || a <= 0 || b <= 0 || c <= 0) {
+    // console.log('Incorrect data');
+    // } else {
+    // const p = (a + b + c) / 2;
+    // const area = Math.sqrt(p * (p - a) * (p - b) * (p - c)).toFixed(3);
+    // console.log(`Площа трикутника: ${area}`);
+
+    // const sides = [a, b, c].sort((x, y) => x - y); 
+    // if (sides[2] ** 2 === sides[0] ** 2 + sides[1] ** 2) {
+    //     console.log('Прямокутний трикутник');
+    // } else {
+    //     console.log('Не прямокутний трикутник');
+    // }
+    // }
     
-    //4.Задано масив чисел, знайти число яке найбільш часто входить в масив, занести це число в новий масив і видалити всі входження цього числа із поточного масиву.
 
-        // let arr = [4, 5, 2, 1, 6, 5, 3, 5, 2, 5]
-        // let data = ... // 5
-        // ...
-        // console.log(arr) // [4, 2, 1, 6, 3, 2]
 
-// 5. 
-//     Користувач вводить три довжини сторін трикутника (використовуйте prompt () три рази для введення кожної сторони).
-//     Необхідно 
-//         a) визначити і вивести в консоль площу трикутника 
-//         b) перевірити чи цей трикутник є прямокутним і вивести в консоль результат перевірки.
-//     Здійснювати перевірку чи введені користувачем значення коректні, в іншому випадку вивести 'Incorrect data‘. Результат обчислення площі трикутника виводити в консоль з точністю 3 знаки після коми (наприклад:  8.42355465 =>  8.424).
 
-// 6. 
-//     Написати умовну конструкцію, яка в залежності від часу доби виводитиме відповідне привітання. Потрібно отримати реальний час доби із системи. Зробити 2 способами через 2 різних умовних оператора.
-//         В діапазоні годин 23-5 – має виводитися привітання “Доброї ночі”
-//         В діапазоні годин 5-11 – має виводитися привітання “Доброго ранку”
-//         В діапазоні годин 11-17 – має виводитися привітання “Доброго дня”
-//         В діапазоні годин 17-23 – має виводитися привітання “Доброго вечора”.
+
+// // 6. - Done
+
+    // let data = new Date();
+    // let hours = data.getHours();
+
+    // if ( 23 <= hours || hours < 5) {
+    //     alert('Good night');
+    // } else if ( 5 <= hours && hours < 11) {
+    //     alert('Good morning');
+    // } else if ( 11 <= hours && hours < 17) {
+    //     alert('Good day');
+    // } else {
+    //     alert('Good evening');
+    // }
+
+    // switch(hours) {
+    //     case 23: case 0: case 1: case 2: case 3: case 4: 
+    //         alert('Good night');
+    //     break;
+    //     case 5: case 6: case 7: case 8: case 9: case 10: 
+    //         alert('Good morning');
+    //     break;
+    //     case 11: case 12: case 13: case 14: case 15: case 16: 
+    //         alert('Good day');
+    //     break;
+    //     default:
+    //         alert('Good evening');
+    //     break;
+    // }
+
 
 // ⭐⭐⭐ 
 //     (Ускладнене. Задача не оцінюється. Для тих, кому хочеться поробити ще щось)
